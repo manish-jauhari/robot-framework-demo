@@ -1,0 +1,22 @@
+How to run the scripts with different options
+
+
+-i include - to include tests with that tag
+
+commond to run the script
+robot -d results -i smoke tests/amazon.robot
+
+to pass a variable to the script:
+robot -d results -v BROWSER:chrome -i smoke tests/amazon.robot
+
+
+commond to run all the scripts in a folder
+robot -d results -i smoke tests
+
+
+-N allows you to specify the top level suite title
+robot -d results -i smoke -N ÈFull RegressionÈ tests
+
+running a specific tests
+robot -d results -t È name of the testÈ path of the script file for that test
+
